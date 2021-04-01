@@ -18,15 +18,9 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
-       'canRegister' => Route::has('register'),
+        'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
-        'message'=>"welcome To this page",
-    ]);
-});
-Route::get('/message', function(){
-    return Inertia::render('Anas',[
-       'message' => Hada_Howa_Mon_Message
     ]);
 });
 
