@@ -91,7 +91,7 @@
 
             <!-- Page Content -->
             <main>
-                <slot />
+                <slot name="menu"/>
             </main>
         </div>
     </div>
